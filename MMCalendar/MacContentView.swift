@@ -1,5 +1,5 @@
 import SwiftUI
-
+#if os(macOS)
 struct MacContentView: View {
     @State private var selectedDate = Date()
     @State private var myanmarDateString = "Loading..."
@@ -42,17 +42,7 @@ struct MacContentView: View {
                     .font(.headline)
                     .fontWeight(.medium)
                 
-                DatePicker("", selection: $selectedDate, displayedComponents: [.date])
-                    .datePickerStyle(.compact)
-                    .labelsHidden()
-                    .accentColor(.blue) // This affects the selection color
-                    .background(Color(NSColor.controlBackgroundColor))
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color(NSColor.separatorColor), lineWidth: 1)
-                    )
-                    .shadow(color: Color.black.opacity(0.05), radius: 2, x: 0, y: 1)
+                CustomCalendarView(selectedDate: $selectedDate)
                     .onChange(of: selectedDate) { _, newDate in
                         withAnimation(.easeInOut(duration: 0.3)) {
                             loadMyanmarCalendar(for: newDate)
@@ -297,3 +287,5 @@ extension DateFormatter {
 #Preview {
     MacContentView()
 }
+
+#endif

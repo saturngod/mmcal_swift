@@ -6,12 +6,28 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		653384A72E0CF98D001D3393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A096D4EB2E03400600E3DFC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A096D4F22E03400600E3DFC6;
+			remoteInfo = MMCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		653384A32E0CF98D001D3393 /* MMCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04456212E09F45A000680DE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		A096D4F32E03400600E3DFC6 /* MMCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		653384A42E0CF98D001D3393 /* MMCalendarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MMCalendarTests;
+			sourceTree = "<group>";
+		};
 		A096D4F52E03400600E3DFC6 /* MMCalendar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MMCalendar;
@@ -20,6 +36,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		653384A02E0CF98D001D3393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A096D4F02E03400600E3DFC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A096D4F52E03400600E3DFC6 /* MMCalendar */,
+				653384A42E0CF98D001D3393 /* MMCalendarTests */,
 				A04456202E09F45A000680DE /* Frameworks */,
 				A096D4F42E03400600E3DFC6 /* Products */,
 			);
@@ -51,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				A096D4F32E03400600E3DFC6 /* MMCalendar.app */,
+				653384A32E0CF98D001D3393 /* MMCalendarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +83,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		653384A22E0CF98D001D3393 /* MMCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 653384A92E0CF98D001D3393 /* Build configuration list for PBXNativeTarget "MMCalendarTests" */;
+			buildPhases = (
+				6533849F2E0CF98D001D3393 /* Sources */,
+				653384A02E0CF98D001D3393 /* Frameworks */,
+				653384A12E0CF98D001D3393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653384A82E0CF98D001D3393 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				653384A42E0CF98D001D3393 /* MMCalendarTests */,
+			);
+			name = MMCalendarTests;
+			packageProductDependencies = (
+			);
+			productName = MMCalendarTests;
+			productReference = 653384A32E0CF98D001D3393 /* MMCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A096D4F22E03400600E3DFC6 /* MMCalendar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A096D4FE2E03400700E3DFC6 /* Build configuration list for PBXNativeTarget "MMCalendar" */;
@@ -90,6 +138,10 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					653384A22E0CF98D001D3393 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A096D4F22E03400600E3DFC6;
+					};
 					A096D4F22E03400600E3DFC6 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -110,11 +162,19 @@
 			projectRoot = "";
 			targets = (
 				A096D4F22E03400600E3DFC6 /* MMCalendar */,
+				653384A22E0CF98D001D3393 /* MMCalendarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		653384A12E0CF98D001D3393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A096D4F12E03400600E3DFC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,6 +185,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6533849F2E0CF98D001D3393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A096D4EF2E03400600E3DFC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,7 +201,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		653384A82E0CF98D001D3393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A096D4F22E03400600E3DFC6 /* MMCalendar */;
+			targetProxy = 653384A72E0CF98D001D3393 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		653384AA2E0CF98D001D3393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comquas.MMCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MMCalendar";
+			};
+			name = Debug;
+		};
+		653384AB2E0CF98D001D3393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comquas.MMCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMCalendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MMCalendar";
+			};
+			name = Release;
+		};
 		A096D4FC2E03400700E3DFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +428,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		653384A92E0CF98D001D3393 /* Build configuration list for PBXNativeTarget "MMCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				653384AA2E0CF98D001D3393 /* Debug */,
+				653384AB2E0CF98D001D3393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A096D4EE2E03400600E3DFC6 /* Build configuration list for PBXProject "MMCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
